@@ -1,0 +1,10 @@
+{
+  "_about": "Synthetic owner notes, like the free-text a ticket, wiki page or resource description would hold. Used by the Gemini case review.",
+  "dev-sandbox-vm-07": "Scratch VM for notebook experiments. Rebuilt from the base image whenever needed; nothing is stored on it.",
+  "dev-sandbox-vm-11": "Runs the half-year restatement batch for finance reporting. Powered on only during close weeks, a few times a year, so long idle gaps are normal.",
+  "dev-gke-cluster": "Shared development cluster used for team experiments. No customer-facing workloads run here.",
+  "prod-gke-nodepool": "Hosts the order-processing services. Sized on purpose for the quarter-end peak, when order volume is several times the normal level.",
+  "staging-sql-01": "Staging copy refreshed nightly from masked production data. Can be recreated from the nightly job.",
+  "lb-old-campaign": "Load balancer from the spring campaign. Marketing confirmed the campaign ended and the landing pages were retired.",
+  "snap-archive-2024": "Weekly snapshot, superseded by the newer snapshot series. Kept only out of habit."
+}

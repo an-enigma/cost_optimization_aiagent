@@ -1,0 +1,21 @@
+{
+  "displayName": "TEMP-Log-Test-Policy",
+  "combiner": "OR",
+  "conditions": [
+    {
+      "displayName": "Trigger Log Found",
+      "conditionMatchedLog": {
+        "filter": "jsonPayload.message=\"FORCE_TEST_ALERT\""
+      }
+    }
+  ],
+  "alertStrategy": {
+    "notificationRateLimit": {
+      "period": "300s"
+    }
+  },
+  "notificationChannels": [
+    "projects/novartis-ai26hyd-850/notificationChannels/17281007156744223420"
+  ],
+  "enabled": true
+}
